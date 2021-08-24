@@ -24,8 +24,8 @@ Start-Transcript -Path "$WorkPath\transcript_$(Get-Date -Format "MM-dd-yyyy_HH-m
 New-Item -ItemType directory -Path $WorkPath
 
 echo "Download winget"
-$Url = "https://github.com/microsoft/winget-cli/releases/download/v1.0.11451/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle"
-$DownloadedLocation = "$WorkPath\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle"
+$Url = "https://github.com/microsoft/winget-cli/releases/download/v1.0.11692/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
+$DownloadedLocation = "$WorkPath\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
 
 Invoke-WebRequest -Uri $Url -OutFile $DownloadedLocation 
 
